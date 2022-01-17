@@ -1,0 +1,109 @@
+.testimonial_section{
+          height: 100%;
+          padding-top: 50px;
+          position: relative;
+}
+.testimonial_parent{
+          padding: 20px 0 100px 0;
+}
+.testimonial_section::after{
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          opacity: 0.8;
+          background-image: linear-gradient(75deg, #f6ecde, #6e6c69 );
+}
+.testimonial_heading{
+          z-index: 2;
+}
+.form_container {
+          width: 450px;
+          height: 400px;
+}
+        
+#form-submit{
+          background-image: linear-gradient(75deg, #19D3AE, #0fcfec);
+          text-transform: uppercase; 
+          border-color: transparent; 
+          width: 140px; 
+          height: 40px;  
+          border-radius: 10px;
+          font-weight: 700;
+          color: #fff;
+}
+.upload_btn {
+          background-image: linear-gradient(75deg, #19D3AE, #0fcfec);
+          border-color: transparent; 
+          text-transform: uppercase;
+          width: 140px; 
+          height: 40px;
+          border-radius: 10px;
+          font-weight: 700;
+          color: #fff;
+          position: absolute;
+}
+.upload_image input{
+          position: relative;
+          opacity: 0;
+          width: 140px;
+          margin: 5px;
+          cursor: pointer !important;
+}
+.comment_section{
+    float: right;
+    margin-bottom: 10px;
+}
+.comment_section button{
+          width: 250px;
+          height: 40px;
+          background: #19D3AE;
+          color: #fff;
+          border-color: transparent;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          padding-top: 6px;
+          font-weight: 700;
+}
+.card_container{
+    width: 20rem !important;
+    height: 19rem !important;
+}
+
+
+.swiper-container{
+    width: 1300px;
+}
+@media screen and (min-width: 1300px){
+   .swiper-container{
+       width: 1300px;
+   }
+}
+@media screen and (min-width: 920px){
+      .swiper-container{
+          width: 920px;
+      }    
+}
+@media screen and (min-width: 780px){
+    .swiper-container{
+        width: 780px;
+    }
+    .card_container{
+        display: flex;
+        margin-left: 0 !important;
+        justify-content: center !important;
+    }
+}
+@media screen and (min-width: 375px){
+    .swiper-container{
+        width: 375px;
+    }
+    .card_container{
+        display: flex;
+        margin-left: 40px;
+        justify-content: center !important;
+    }
+}

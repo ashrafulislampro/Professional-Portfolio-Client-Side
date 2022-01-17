@@ -1,0 +1,78 @@
+.contact_section {
+  height: 100%;
+  padding: 40px 0 50px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../images/footer-bg.png");
+}
+.location_area {
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px 0 5px 50px !important;
+  background-color: rgb(226, 226, 226);
+}
+.contact_area {
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 30px;
+  width: 60% !important;
+  padding: 30px 50px 5px 50px !important;
+  background: rgb(226, 226, 226);
+  box-shadow: 3px 3px 3px lightgrey, -3px -3px 3px lightgrey;
+}
+.btn_primary {
+  width: 150px;
+  background: green !important;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+
+/* .btn-scroll {
+  width: 50px;
+  height: 50px;
+  float: right;
+  color: #f0f8ff !important;
+  font-weight: bold !important;
+  font-size: 24px;
+  background-color: tomato;
+  border-radius: 10px;
+  border: none;
+} */
+
+.icon i {
+  font-size: 1.8rem !important;
+}
+@media screen and (max-width: 1310px) {
+  .contact_parent_role {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .location_area {
+    width: 90% !important;
+  }
+  .contact_area {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 810px) {
+  .contact_parent_role {
+    display: flex;
+    flex-direction: column;
+  }
+  .location_area {
+    width: 100% !important;
+  }
+  .contact_area {
+    margin-top: 30px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact_area {
+    margin-top: 30px !important;
+  }
+}

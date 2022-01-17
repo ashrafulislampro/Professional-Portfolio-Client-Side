@@ -1,0 +1,22 @@
+.footer_container{
+          height: 10.8%;
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+}
+.footer_parent{
+     width: 100%;
+     height: 100%;
+     max-width: 1920px;
+}
+.footer_parent img{
+          min-width : 100% !important; 
+          height: 130px;
+}
+@media screen and (min-width: 1110px){
+          .footer_parent{
+                    display: flex;
+                    align-items: flex-end;
+          }
+}
