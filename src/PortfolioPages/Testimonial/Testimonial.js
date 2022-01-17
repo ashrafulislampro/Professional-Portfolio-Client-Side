@@ -14,7 +14,7 @@ import "swiper/css/scrollbar";
 const Testimonial = () => {
   const [reviewData, setReviewData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch(" https://ancient-plateau-08173.herokuapp.com/reviews")
       .then((res) => res.json())
       .then(data=>{
         if(data.length > 0){

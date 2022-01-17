@@ -30,7 +30,7 @@ const ReviewsModal = () => {
       imageUrl: imageUrl,
     };
 
-    fetch("http://localhost:5000/addReview", {
+    fetch("https://ancient-plateau-08173.herokuapp.com/addReview", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newReview),
@@ -47,22 +47,21 @@ const ReviewsModal = () => {
   const uploadImage = (event) => {
     console.log(event.target.files[0]);
     const imageData = new FormData();
-    imageData.set("key", "10a8465fdab8030470d70e1b37e0de7d");
+    imageData.set("key", "4fcec7666ec286776fa3d0b484dc327e");
     imageData.append("image", event.target.files[0]);
     console.log(imageData);
     axios
       .post("https://api.imgbb.com/1/upload", imageData)
-      .then((res) => setImageUrl(res.data.data.display_url))
+      .then((res) => {
+        setImageUrl(res.data.data.display_url);
+      })
       .catch((error) => console.log(error));
   };
  
   const openModal = () => {
     setIsOpen(true);
   };
-  let subtitle;
-  const afterOpenModal=()=> {
-    subtitle.style.color = '#f00';
-  }
+  
 
   const closeModal=()=> {
     setIsOpen(false);
@@ -73,7 +72,6 @@ const ReviewsModal = () => {
     <button  onClick={openModal}>Comment</button>
       <Modal
         isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
@@ -94,7 +92,7 @@ const ReviewsModal = () => {
           <br />
           <input
             className="form-control"
-            type="title"
+            type="text"
             name="name"
             placeholder="Your Title"
             required
@@ -124,7 +122,7 @@ const ReviewsModal = () => {
           <div className="d-flex justify-content-between">
             <div className="upload_image">
               <button className="upload_btn">Upload Image</button>
-              <input onClick={uploadImage} type="file" name="file" required />
+              <input onChange={uploadImage} type="file" name="file" required />
             </div>
             <input id="form-submit" type="submit" value="Send" />
           </div>
