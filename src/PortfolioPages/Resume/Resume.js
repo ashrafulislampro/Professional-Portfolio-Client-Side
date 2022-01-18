@@ -53,7 +53,7 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8 col-md-12 col-sm-12">
+            <div className="col-lg-7 col-md-12 col-sm-12 resume_details">
                 {tab === "interest" && <Interest></Interest>}
                 {tab === "work" && <WorkHistory></WorkHistory>}
                 {tab === "education" && <Education></Education>}

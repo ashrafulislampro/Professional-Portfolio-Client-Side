@@ -126,7 +126,7 @@
 }
 @media screen and (max-width: 375px){
         .img{
-                width: 375px;
+                width: 415px;
                 height: auto;
         }
         .description_role{
@@ -135,5 +135,18 @@
         }
         .description_role h1{
                 width: 375px;
+        }
+}
+@media screen and (max-width: 360px){
+        .img{
+                width: 410px;
+                height: auto;
+        }
+        .description_role{
+                margin: 10px !important;
+                
+        }
+        .description_role h1{
+                width: 355px;
         }
 }
