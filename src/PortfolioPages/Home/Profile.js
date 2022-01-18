@@ -17,8 +17,8 @@ const Profile = () => {
               <a href="https://www.instagram.com/ashrafulislam1659">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://www.youtube.com/">
-                <i className="fab fa-youtube-square"></i>
+              <a href="https://github.com/ashrafulislampro">
+                <i className="fab fa-github-square"></i>
               </a>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Profile = () => {
             <a href="#contact">
             <button  className="btn primary-btn">Hire Me</button>
             </a>
-            <a href="/" download="">
+            <a href="Ashraful-Islam-Resume.pdf" download="Ashraful-Islam-Resume.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>

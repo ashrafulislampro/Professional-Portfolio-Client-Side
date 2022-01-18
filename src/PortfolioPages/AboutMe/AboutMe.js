@@ -64,7 +64,7 @@ const AboutMe = () => {
                 <a href="#contact">
                 <button className="btn hire_btn">Hire Me</button>
                 </a>
-                <a href="/" download="">
+                <a href="Ashraful-Islam-Resume.pdf" download="Ashraful-Islam-Resume.pdf">
                   <button className="btn resume_btn">Get Resume</button>
                 </a>
               </div>
