@@ -18,13 +18,12 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="container">
-        <div className="about_details d-flex">
-          <div className="about_img">
-            <img src={photo} alt="No internet connection" />
+        <div className="row">
+          <div className="col-sm-12 col-md-12 col-lg-5 img_container">
+            <img className="img" src={photo} alt="No internet connection"/>
           </div>
-          <div className="about-description d-flex justify-content-around">
-            <div className="about-description-role">
-            <div className="about_description_options">
+          <div className="col-sm-12 col-md-12 col-lg-7">
+          <div className="description_role">
             <h1>
              <Typical
                   loop={Infinity}
@@ -40,7 +39,7 @@ const AboutMe = () => {
                ]}
              />
             </h1>
-              <div>
+              <div className="text">
                 <p>
                   I am a highly self-motivated web developer with background
                   knowledge of MERN Stack with Redux , React Hook with a knack
@@ -70,11 +69,10 @@ const AboutMe = () => {
               </div>
             </div>
             </div>
+            </div>
+            </div>
           </div>
           </div>
-        </div>
-      </div>
-    </div>
   );
 };
 

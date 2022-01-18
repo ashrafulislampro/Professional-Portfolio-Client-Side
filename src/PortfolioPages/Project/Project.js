@@ -31,6 +31,10 @@ const Project = () => {
         <div className="container py-5 mt-5">
           <Swiper
             breakpoints={{
+              360:{
+                width: 360,
+                slidesPerView: 1
+              },
               375:{
                 width: 375,
                 slidesPerView: 1

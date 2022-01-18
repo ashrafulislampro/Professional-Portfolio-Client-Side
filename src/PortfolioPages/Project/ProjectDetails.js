@@ -8,7 +8,7 @@ const ProjectDetails = (props) => {
           return (
             <div onClick={() => handleProject(linkUrl)} style={{cursor: 'pointer'}} className="d-flex justify-content-center">
             <div className="card shadow card_container">
-            <img className="img" style={{height: '14rem'}} src={imgUrl} alt="" />
+            <img style={{height: '14rem'}} src={imgUrl} alt="" />
               <div className="card-body">
                 <p className="card-text title text-center">
                 {name}

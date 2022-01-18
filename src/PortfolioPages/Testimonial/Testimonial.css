@@ -103,7 +103,15 @@
     }
     .card_container{
         display: flex;
-        margin-left: 40px;
+        justify-content: center !important;
+    }
+}
+@media screen and (min-width: 360px){
+    .swiper-container{
+        width: 360px;
+    }
+    .card_container{
+        display: flex;
         justify-content: center !important;
     }
 }

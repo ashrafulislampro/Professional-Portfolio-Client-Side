@@ -48,6 +48,10 @@ const Testimonial = () => {
           </div>
           <Swiper
             breakpoints={{
+              360: {
+                width: 360,
+                slidesPerView: 1,
+              },
               375: {
                 width: 375,
                 slidesPerView: 1,

@@ -5,7 +5,18 @@
           align-items: center;
           justify-content: center;
 }
-.about-description-role h1{
+/* .about_parent{
+        box-shadow: 5px 5px 5px lightgrey, -5px -5px 5px lightgrey;
+        padding: 50px;
+} */
+.description_role{
+        box-shadow: 3px 3px 5px lightgrey, -3px -3px 5px lightgrey;
+        padding: 50px;
+}
+.img{
+        box-shadow: 3px 3px 5px lightgrey, -3px -3px 5px lightgrey;   
+}
+.description_role h1{
         font-size: 40px;
         font-family: "Anton", sans-serif;
         font-family: "Bebas Neue", cursive;
@@ -19,12 +30,7 @@
           font-family: "Bebas Neue", cursive;
           font-family: "Charm", cursive;
 }
-.about_img img, .about-description{
-          height: 600px;
-}
-.about-description{
-          padding: 30px;
-}
+
 .about_details{
           box-shadow: 5px 5px 5px lightgrey, -5px -5px 5px lightgrey;
 }
@@ -75,37 +81,59 @@
           border-radius: 10px;
           background-color: #f34511;
 }
-
+.img{
+        width: 450px;
+}
+.description_role{
+        padding-top: 10px;
+}
 @media screen and (max-width: 1110px) {
-   .about_img img{
-         width: 450px !important;  
-   }      
+        .img{
+                width: 100%;
+                margin-right: 15px;
+        }  
 }
 @media screen and (max-width: 910px){
-        .about_img img{
-                width: 400px !important;
-        } 
+        
 } 
 @media screen and (max-width: 810px){
         .heading_text{
+                font-size: 4.5rem;
+        }
+        .description_role{
+                margin-top: 20px;
+        }
+        .description_role h1{
+                font-size: 4rem;
+        }
+        .text p, .highlighted_text li{
+                font-size: 1.5rem;
+        }
+        .highlighted_text h4{
                 font-size: 2.5rem;
         }
-        .about_details{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+}
+@media screen and (max-width: 605px){
+        .description_role h1{
+                font-size: 2.5rem;
         }
-        .about_img img{
-                width: 420px !important;
-        } 
-        .about-description{
-                width: 420px !important;
-        } 
-        .about_description_options{
-                height: 470px !important;
-        } 
-        
+        .text p, .highlighted_text li{
+                font-size: 1rem;
+        }
+        .highlighted_text h4{
+                font-size: 2rem;
+        }
 }
 @media screen and (max-width: 375px){
-        
+        .img{
+                width: 375px;
+                height: auto;
+        }
+        .description_role{
+                margin: 10px 3px !important;
+                
+        }
+        .description_role h1{
+                width: 375px;
+        }
 }

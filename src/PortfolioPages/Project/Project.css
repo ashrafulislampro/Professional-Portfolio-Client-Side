@@ -42,7 +42,7 @@
           .card_container_details{
                     display: flex;
                     flex-direction: column;
-                    margin-left: 60px;
+                    /* margin-left: 60px; */
                     justify-content: center !important;
           }
 }
@@ -60,6 +60,13 @@
 @media screen and (min-width:375px){
           .swiper-container{
                     width: 375px;
+                    
+          }
+          
+}
+@media screen and (min-width:360px){
+          .swiper-container{
+                    width: 360px;
                     
           }
           

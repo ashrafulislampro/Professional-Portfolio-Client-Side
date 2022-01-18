@@ -24,11 +24,11 @@ const Resume = () => {
           </div>
         </div>
         <div className="container">
-          <div className="row row_content">
+          <div className="row">
             <div className="col-lg-4 col-md-12 col-sm-12 ">
               <div className="resume_bullets">
                 <div className="bullet_container">
-                  <div className="bullets_icons"></div>
+                <div className="bullets_icons"></div>
                   <div className="bullets">
                     <div onClick={() => setTab("skill")} className="bullet">
                       <img className="img_icon" src={program} alt="" />
