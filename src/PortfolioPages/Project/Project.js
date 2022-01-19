@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Project.css";
 import { projectData } from "./ProjectData";
 import ProjectDetails from "./ProjectDetails";
-import { Navigation, Pagination, A11y } from "swiper";
+import { Navigation, Pagination, A11y, Autoplay, EffectCoverflow } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,6 +10,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/effect-coverflow";
 const Project = () => {
   const [fakeData, setFakeData] = useState([]);
   useEffect(() => {
@@ -52,9 +54,24 @@ const Project = () => {
                 slidesPerView: 4
               }
             }}
-            modules={[Navigation, Pagination, A11y]}
+            modules={[Navigation, Pagination, A11y, Autoplay, EffectCoverflow]}
             spaceBetween={20}
             slidesPerView={4}
+            loop={Infinity}
+            centeredSlides={true}
+            autoplay={{
+              delay:1000,
+              disableOnInteraction: false
+            }}
+            effect='coverflow'
+            grabCursor= {true}
+            effectCoverflow={{
+              rotate: 50,
+              stretch: 0, 
+              depth: 100, 
+              modifier: 1, 
+              slideShadows: true
+            }}
             navigation
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}

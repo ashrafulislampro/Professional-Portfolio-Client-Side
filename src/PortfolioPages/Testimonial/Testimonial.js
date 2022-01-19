@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Testimonial.css";
 import TestimonialCard from "./TestimonialCard";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 
 const Testimonial = () => {
   const [reviewData, setReviewData] = useState([]);
@@ -72,10 +73,16 @@ const Testimonial = () => {
               }
             }}
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={20}
             slidesPerView={4}
             navigation
+            centeredSlides={true}
+            loop={Infinity}
+            autoplay={{
+              delay:1000,
+              disableOnInteraction:false,
+            }}
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
