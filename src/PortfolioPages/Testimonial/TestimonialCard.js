@@ -2,7 +2,7 @@ import React from "react";
 
 const TestimonialCard = (props) => {
   const { name, title, description, imageUrl, date } = props.review;
-  // console.log(name, imageUrl, description);
+
   return (
     <div className="d-flex justify-content-center">
       <div className="card shadow card_container">

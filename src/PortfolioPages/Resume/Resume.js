@@ -25,10 +25,10 @@ const Resume = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-12 col-sm-12 ">
+            <div className="col col-lg-4 col-md-12 col-sm-12 ">
               <div className="resume_bullets">
                 <div className="bullet_container">
-                <div className="bullets_icons"></div>
+                  <div className="bullets_icons"></div>
                   <div className="bullets">
                     <div onClick={() => setTab("skill")} className="bullet">
                       <img className="img_icon" src={program} alt="" />
@@ -53,11 +53,13 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-7 col-md-12 col-sm-12 resume_details">
+            <div className="col col-lg-7 col-md-12 col-sm-12">
+              <div className="resume_details">
                 {tab === "interest" && <Interest></Interest>}
                 {tab === "work" && <WorkHistory></WorkHistory>}
                 {tab === "education" && <Education></Education>}
                 {tab === "skill" && <Skill></Skill>}
+              </div>
             </div>
           </div>
         </div>
