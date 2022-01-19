@@ -84,6 +84,15 @@
 .img{
         width: 450px;
 }
+.img_container:hover{
+        transform: scale(1.1);
+        transition: all 1.5s ease-in-out;
+        cursor: pointer;
+}
+.description_role:hover{
+        transform: scale(1.1);
+        transition: all 1.5s ease-in-out;        
+}
 .description_role{
         padding-top: 10px;
 }
