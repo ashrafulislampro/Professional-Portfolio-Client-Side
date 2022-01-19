@@ -80,7 +80,7 @@ const Testimonial = () => {
             centeredSlides={true}
             loop={Infinity}
             autoplay={{
-              delay:1000,
+              delay:2500,
               disableOnInteraction:false,
             }}
             pagination={{ clickable: true }}
