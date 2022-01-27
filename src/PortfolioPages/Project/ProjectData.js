@@ -1,7 +1,7 @@
 export const projectData =[
           {
                     id: 1,
-                    linkUrl: 'https://driving-school-2090b.web.app',
+                    linkUrl: 'https://driving-school-2090b.firebaseapp.com',
                     imgUrl: 'https://i.ibb.co/LPjnn6g/Capture.png',
                     name: 'Driving Car Institute',
           },
