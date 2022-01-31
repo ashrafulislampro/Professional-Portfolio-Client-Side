@@ -2,11 +2,11 @@ import React from "react";
 import photo from "../../images/ashraful11.jpg";
 import "./AboutMe.css";
 import Typical from "react-typical";
-
+import Zoom from 'react-reveal/Zoom';
 const AboutMe = () => {
   return (
     <div id="about" className="about_section">
-      <div>
+      <Zoom>
         <div className="about_text text-center">
           <h2 className="heading_text">About Me.</h2>
           <p className="text-secondary">Why Choose Me?</p>
@@ -76,7 +76,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Zoom>
     </div>
   );
 };

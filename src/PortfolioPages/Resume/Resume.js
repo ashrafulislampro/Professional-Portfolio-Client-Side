@@ -12,6 +12,7 @@ const Resume = () => {
   const [tab, setTab] = useState("skill");
   return (
     <section id="resume" className="resume_section">
+      
       <div className="resume_container">
         <div className="resume_header text-center">
           <h2 className="heading_text">Resume</h2>
@@ -26,6 +27,7 @@ const Resume = () => {
         <div className="container">
           <div className="row">
             <div className="col col-lg-4 col-md-12 col-sm-12 ">
+            
               <div className="resume_bullets">
                 <div className="bullet_container">
                   <div className="bullets_icons"></div>
