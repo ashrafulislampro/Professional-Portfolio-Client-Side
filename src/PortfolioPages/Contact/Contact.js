@@ -6,6 +6,7 @@ import emailjs from "emailjs-com";
 import email from "../../images/email.png";
 import phone from "../../images/phone-call.png";
 import pin from "../../images/pin.png";
+import {Bounce} from 'react-reveal';
 
 const Contact = () => {
   const [status, setStatus] = useState(false);
@@ -44,8 +45,10 @@ const Contact = () => {
           </div>
         </div>
         <div className="container">
+        <Bounce>
           <div className="row">
             <div className="col-sm-12 col-md-5 col-lg-4">
+            
               <div className="address_container">
                 <div className="address">
                   <div className="icon">
@@ -63,8 +66,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h6 className="fw-bold">Email</h6>
-                    <p>ashrafulislama8795948@gmail.com</p>
                     <p>ashrafulislam1659@gmail.com</p>
+                    <p>ashrafulislama8795948@gmail.com</p>
                   </div>
                 </div>
                 <div className="phone">
@@ -73,7 +76,6 @@ const Contact = () => {
                   </div>
                   <div>
                     <h6 className="fw-bold">Phone</h6>
-                    <p>+880 1741691659</p>
                     <p>+880 1303960837</p>
                   </div>
                 </div>
@@ -94,8 +96,9 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+            
             <div className="col-sm-12 col-md-7 col-lg-8 form_details">
-              
+            
                 {status && (
                   <p
                     className="text-center"
@@ -154,8 +157,10 @@ const Contact = () => {
                     className="btn btn_primary"
                   />
                 </form>
+                
             </div>
           </div>
+          </Bounce>
         </div>
       </div>
 
