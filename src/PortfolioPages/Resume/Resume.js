@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import "./Resume.css";
 import program from "../../images/flowchart.png";
 import interest from "../../images/interest-rate.png";
 import education from "../../images/mortarboard.png";
 import work from "../../images/work-history.png";
+import Education from "./Education";
 import Interest from "./Interest";
+import "./Resume.css";
 import Skill from "./Skill";
 import WorkHistory from "./WorkHistory";
-import Education from "./Education";
 const Resume = () => {
   const [tab, setTab] = useState("skill");
   return (
