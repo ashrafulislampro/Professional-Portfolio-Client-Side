@@ -1,6 +1,6 @@
 import React from "react";
-import "./Profile.css";
 import Typical from "react-typical";
+import "./Profile.css";
 const Profile = () => {
   return (
     <section id="home" className="profile_container">
@@ -11,7 +11,7 @@ const Profile = () => {
               <a href="https://www.facebook.com/profile.php?id=100052327922373">
                 <i className="fab fa-facebook-square"></i>
               </a>
-              <a href="https://www.linkedin.com/in/ashraful-islam-7a7a3620a">
+              <a href="https://www.linkedin.com/in/ashraful-islam-developer/">
                 <i className="fab fa-linkedin"></i>
               </a>
               <a href="https://www.instagram.com/ashrafulislam1659">
